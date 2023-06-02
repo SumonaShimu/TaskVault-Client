@@ -6,7 +6,7 @@ const Navbar = () => {
         <li><Link to='/alltasks' className="btn btn-ghost text-lg">All Tasks</Link></li>
     </>
     return (
-        <div className="navbar bg-base-300 text-base-content py-5 px-16 text-blue-700">
+        <div className="navbar bg-base-300 py-5 px-16 text-blue-700">
             <div className="navbar-start">
                 <div className="dropdown">
                     <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -21,14 +21,12 @@ const Navbar = () => {
                     <p className="btn btn-ghost normal-case text-3xl font-bold"><span className="">Task<span className="text-blue-700 m-0">Vault</span></span></p>
                 </div>
             </div>
-            <div className="navbar-center hidden lg:flex">
+            <div className="navbar-end hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">
                     {listitems}
                 </ul>
             </div>
-            <div className="navbar-end">
-                <a className="btn btn-primary">Login</a>
-            </div>
+            
         </div>
     );
 };
